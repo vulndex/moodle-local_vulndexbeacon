@@ -22,18 +22,15 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-declare(strict_types=1);
-require_once(__DIR__ . '/../config.php');
+require(__DIR__ . '/../../config.php');
 
-global $PAGE;
 defined('MOODLE_INTERNAL') || die();
 
 try {
     require_login();
-    require_sesskey();
-
     $context = context_system::instance();
     require_capability('local/vulndexbeacon:sendnow', $context);
+    require_sesskey();
 
     $PAGE->set_url(new moodle_url('/local/vulndexbeacon/sync.php'));
     $PAGE->set_context($context);
