@@ -30,6 +30,7 @@ $string['apikey'] = 'API key';
 $string['apikey_desc'] = 'Bearer token used to authenticate.';
 $string['nodeid'] = 'Node identifier';
 $string['nodeid_desc'] = 'Your internal node ID for this Moodle instance.';
+$string['vulndexbeacon:sendnow'] = 'Send data to VulnDex';
 $string['task_send_version'] = 'Send Moodle version to external endpoint';
 $string['privacy:metadata'] =
     'When used with a valid API key, VulnDex Beacon transmits the following data, some of which may be personal: IP address, server hostname, plugin and theme names, along with their respective versions and status. In addition, the PHP version and OS version are transmitted.';

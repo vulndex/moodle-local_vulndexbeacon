@@ -23,21 +23,22 @@
  */
 
 declare(strict_types=1);
-$string['pluginname'] = 'VulnDex Beacon';
 $string['apiendpoint'] = 'API-Endpunkt';
+$string['pluginname'] = 'VulnDex Beacon';
 $string['apiendpoint_desc'] = 'HTTPS-URL, an die die Version als JSON per POST gesendet wird.';
 $string['apikey'] = 'API-Schlüssel';
 $string['apikey_desc'] = 'Bearer-Token zur Authentifizierung.';
 $string['nodeid'] = 'Node-Kennung';
 $string['nodeid_desc'] = 'Interne Kennung für diese Moodle-Instanz.';
-$string['task_send_version'] = 'Moodle-Version an externen Endpunkt senden';
+$string['vulndexbeacon:sendnow'] = 'Datentransfer zu VulnDex';
+$string['manualsync'] = 'Manueller Sync';
 $string['privacy:metadata'] =
     'VulnDex Beacon übermittelt mit gültigem API-Schlüssel folgende möglicherweise personenbezogene Daten: IP-Adresse, Hostname des Servers, Name des Plugins und des Themes sowie die zugehörigen Versionen und der Status. Darüber hinaus werden die PHP-Version und die OS-Version übermittelt.';
-$string['manualsync'] = 'Manueller Sync';
-$string['manualsync_desc'] = 'Löst sofort einen Sync zum externen Endpunkt mit der aktuellen Konfiguration aus.';
+$string['task_send_version'] = 'Moodle-Version an externen Endpunkt senden';
 $string['manualsync_button'] = 'Sync jetzt ausführen';
-$string['sync_triggered'] = 'Manueller Sync wurde gestartet. Details sind in den Logs ersichtlich.';
+$string['manualsync_desc'] = 'Löst sofort einen Sync zum externen Endpunkt mit der aktuellen Konfiguration aus.';
 $string['laststatus'] = 'Letzter Sync-Status';
+$string['sync_triggered'] = 'Manueller Sync wurde gestartet. Details sind in den Logs ersichtlich.';
 $string['laststatus_desc'] = 'Zusammenfassung des letzten Sync-Versuchs zur VulnDex API.';
 $string['laststatus_never'] = 'Bisher wurde noch kein Sync ausgeführt.';
 $string['sync_exception'] = 'Während dem manuellen Sync ist ein Fehler aufgetreten.';
